@@ -6,4 +6,8 @@ describe('FizzBuzz should', () => {
   ('should return the string representation of the input number', (inputNumber: number, stringOutput: string) => {
     expect(fizzBuzz(inputNumber)).toBe(stringOutput)
   })
+
+  it('should return fizz when input is 3', () => {
+    expect(fizzBuzz(3)).toBe('Fizz')
+  })
 })
