@@ -7,7 +7,7 @@ describe('FizzBuzz should', () => {
     expect(fizzBuzz(inputNumber)).toBe(stringOutput)
   })
 
-  it('should return fizz when input is 3', () => {
-    expect(fizzBuzz(3)).toBe('Fizz')
+  it.each([3,6,9,18,27])('should return Fizz when input is multiples of three', (inputNumber) => {
+    expect(fizzBuzz(inputNumber)).toBe('Fizz')
   })
 })
