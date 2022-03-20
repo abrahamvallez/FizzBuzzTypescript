@@ -14,4 +14,8 @@ describe('FizzBuzz should', () => {
   it.each([5,10,20,55,95])('should return Buzz when input is multiples of five', (inputNumber) => {
     expect(fizzBuzz(inputNumber)).toBe('Buzz')
   })
+
+  it.each([15,30,90,45])('should return FizzBuzz when input is multiples of three and five', (inputNumber) => {
+    expect(fizzBuzz(inputNumber)).toBe('FizzBuzz')
+  })
 })
